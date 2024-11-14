@@ -17,6 +17,10 @@ def click(x, y):
 
 
 def main():
+    try:
+        close_settings()
+    except:
+        print("Settings is not open") 
     open_settings()  # Open the Settings app
     click(406, 380)  # Apps
     click(76, 275) # Standard Apps
